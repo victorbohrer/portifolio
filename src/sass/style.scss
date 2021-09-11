@@ -1,0 +1,70 @@
+@import '../../node_modules/bootstrap/scss/bootstrap-grid.scss';
+
+
+/* === FONTS =================== */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;500;700&family=Poppins:wght@100;200;400;500;600;700&display=swap');
+
+/* === COlORS =================== */
+$grey: #3f3e40;
+$white: #fff;
+$blue: #094678;
+$light-blue: #0ebbcb;
+$str-blue: #393dd2;
+$med-blue: #378fd3;
+$purple: #6c42f4;
+
+body {
+  background-color: $grey;
+}
+
+section {
+  padding-top: 100px;
+
+  .controler {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 1em $grey;
+    padding: 100px;
+    border-radius: 5px;
+    background-color: $white;
+
+    label {
+      font-family: Poppins, sans-serif;
+      text-align: center;
+      padding: 20px 10px;
+      width: 200px;
+      background-color: $purple;
+      color: $white;
+      text-transform: uppercase;
+      text-align: center;
+      display: block;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    input[type='file'] {
+      display: none;
+    }
+
+    input[type='submit'] {
+      border-radius: 25px;
+      background-color: $grey;
+      padding: 5px 32px;
+      border: 1px solid $grey;
+      transition: all ease-in-out 0.3s;
+      cursor: pointer;
+      color: $white;
+      font-size: 16px;
+    }
+
+    input[type='submit']:hover {
+      background-color: transparent;
+      color: $grey;
+    }
+
+    .center {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
